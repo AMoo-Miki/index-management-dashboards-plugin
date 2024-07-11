@@ -21,7 +21,7 @@ import {
   EuiAccordion,
   EuiRadioGroup,
   EuiText,
-  EuiCheckbox,
+  EuiCompressedCheckbox,
   EuiPanel,
   EuiHorizontalRule,
   EuiSmallButtonIcon,
@@ -650,7 +650,7 @@ export default class CreateSnapshotPolicy extends Component<CreateSMPolicyProps,
                 </span>
                 <EuiSpacer size="s" />
 
-                <EuiCheckbox
+                <EuiCompressedCheckbox
                   id="delete_schedule_checkbox"
                   label="Same as snapshot frequency"
                   checked={!deletionScheduleEnabled}
@@ -686,7 +686,7 @@ export default class CreateSnapshotPolicy extends Component<CreateSMPolicyProps,
             <EuiText>Notify on snapshot activities</EuiText>
 
             <EuiSpacer size="s" />
-            <EuiCheckbox
+            <EuiCompressedCheckbox
               id="notification-creation"
               label="When a snapshot has been created."
               checked={getNotifyCreation(policy)}
@@ -697,7 +697,7 @@ export default class CreateSnapshotPolicy extends Component<CreateSMPolicyProps,
 
             <EuiSpacer size="s" />
 
-            <EuiCheckbox
+            <EuiCompressedCheckbox
               id="notification-deletion"
               label="When a snapshots has been deleted."
               checked={getNotifyDeletion(policy)}
@@ -708,7 +708,7 @@ export default class CreateSnapshotPolicy extends Component<CreateSMPolicyProps,
 
             <EuiSpacer size="s" />
 
-            <EuiCheckbox
+            <EuiCompressedCheckbox
               id="notification-failure"
               label="When a snapshot has failed."
               checked={getNotifyFailure(policy)}
