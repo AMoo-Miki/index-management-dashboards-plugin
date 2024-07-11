@@ -5,7 +5,7 @@
 
 import React, { Component } from "react";
 import {
-  EuiButtonEmpty,
+  EuiSmallButtonEmpty,
   EuiFlexGrid,
   EuiFlexItem,
   EuiFlyout,
@@ -147,7 +147,7 @@ export default class SnapshotFlyout extends Component<SnapshotFlyoutProps, Snaps
         </EuiFlyoutBody>
 
         <EuiFlyoutFooter>
-          <EuiButtonEmpty onClick={onCloseFlyout}>Close</EuiButtonEmpty>
+          <EuiSmallButtonEmpty onClick={onCloseFlyout}>Close</EuiSmallButtonEmpty>
         </EuiFlyoutFooter>
       </EuiFlyout>
     );
