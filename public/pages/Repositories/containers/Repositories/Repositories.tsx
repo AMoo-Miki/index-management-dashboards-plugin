@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import {
-  EuiButton,
+  EuiSmallButton,
   EuiContextMenuItem,
   EuiContextMenuPanel,
   EuiInMemoryTable,
@@ -205,7 +205,7 @@ export default class Repositories extends Component<RepositoriesProps, Repositor
       </EuiContextMenuItem>,
     ];
     const popoverButton = (
-      <EuiButton
+      <EuiSmallButton
         iconType="arrowDown"
         iconSide="right"
         disabled={!selectedItems.length}
@@ -215,18 +215,18 @@ export default class Repositories extends Component<RepositoriesProps, Repositor
         data-test-subj="actionButton"
       >
         Actions
-      </EuiButton>
+      </EuiSmallButton>
     );
     const actions = [
-      <EuiButton iconType="refresh" onClick={this.getRepos} data-test-subj="refreshButton">
+      <EuiSmallButton iconType="refresh" onClick={this.getRepos} data-test-subj="refreshButton">
         Refresh
-      </EuiButton>,
-      <EuiButton disabled={!selectedItems.length} onClick={this.showDeleteModal} data-test-subj="deleteButton" color="danger">
+      </EuiSmallButton>,
+      <EuiSmallButton disabled={!selectedItems.length} onClick={this.showDeleteModal} data-test-subj="deleteButton" color="danger">
         Delete
-      </EuiButton>,
-      <EuiButton onClick={this.onClickCreate} fill={true}>
+      </EuiSmallButton>,
+      <EuiSmallButton onClick={this.onClickCreate} fill={true}>
         Create repository
-      </EuiButton>,
+      </EuiSmallButton>,
     ];
 
     const search = {

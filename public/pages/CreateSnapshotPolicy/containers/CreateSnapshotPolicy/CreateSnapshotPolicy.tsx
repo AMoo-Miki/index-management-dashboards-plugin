@@ -15,7 +15,7 @@ import {
   EuiSpacer,
   EuiTitle,
   EuiButtonEmpty,
-  EuiButton,
+  EuiSmallButton,
   EuiComboBoxOptionOption,
   EuiFieldNumber,
   EuiAccordion,
@@ -805,9 +805,9 @@ export default class CreateSnapshotPolicy extends Component<CreateSMPolicyProps,
           </EuiFlexItem>
 
           <EuiFlexItem grow={false}>
-            <EuiButton fill onClick={this.onClickSubmit} isLoading={isSubmitting}>
+            <EuiSmallButton fill onClick={this.onClickSubmit} isLoading={isSubmitting}>
               {isEdit ? "Update" : "Create"}
-            </EuiButton>
+            </EuiSmallButton>
           </EuiFlexItem>
         </EuiFlexGroup>
       </div>
