@@ -16,7 +16,7 @@ import {
   EuiFlyoutHeader,
   EuiCompressedFormRow,
   EuiLink,
-  EuiSelect,
+  EuiCompressedSelect,
   EuiSpacer,
   EuiText,
   EuiTitle,
@@ -270,7 +270,7 @@ export default class CreateRepositoryFlyout extends Component<CreateRepositoryPr
 
           <CustomLabel title="Repository type" helpText={repoTypeHelpText} />
           <EuiCompressedFormRow isInvalid={!!repoTypeError} error={repoTypeError}>
-            <EuiSelect
+            <EuiCompressedSelect
               options={REPO_SELECT_OPTIONS}
               value={selectedRepoTypeOption}
               onChange={(e) => this.setState({ selectedRepoTypeOption: e.target.value })}
